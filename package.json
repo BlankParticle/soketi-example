@@ -1,0 +1,15 @@
+{
+  "name": "server-side-events",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:pusher": "docker run -p 6001:6001 -p 9601:9601 quay.io/soketi/soketi:1.4-16-debian",
+    "dev:server": "cd server && bun dev && cd -",
+    "dev:client": "cd client && bun dev && cd -",
+    "install": "cd server && bun install && cd ../client && bun install && cd -"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
